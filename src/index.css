@@ -1,0 +1,96 @@
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: #fafbfc;
+}
+
+h1,
+h2 {
+  margin: 0 0 8px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dfe1e5;;
+  border-radius: 8px;
+  padding: 8px;
+  height: 300px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+th {
+  border-bottom: 1px solid #dfe1e5;;
+  text-align: left;
+}
+
+tr:hover {
+  background: #f1f3f4;
+}
+
+tr.selected {
+  background: #e7efff;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #dfe1e5;;
+  background: #0057d8;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003ea8;
+}
+
+button:disabled {
+  background: gray; 
+  color: #f6f3f3;
+  cursor: not-allowed;
+  opacity: 0.6;             
+}
+
+.toast {
+  background: #5c5d5f;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  opacity: 0.95;
+  animation: fadeout 5s forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 0.95;
+  }
+
+  80% {
+    opacity: 0.95;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
